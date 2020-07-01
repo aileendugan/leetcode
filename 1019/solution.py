@@ -17,11 +17,13 @@ def nextLargestNodes(head):
 			if (x>=y):
 				continue
 			else:
-				answer.append(y)
+				thing = y
 				check = True
+				break
 		if not check:
 			answer.append(0)
 		else:
+			answer.append(thing)
 			check = False
 	return answer
 
